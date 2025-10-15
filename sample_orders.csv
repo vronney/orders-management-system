@@ -1,0 +1,26 @@
+order_id,customer_email,customer_name,product_name,quantity,unit_price,total_amount,status,order_date
+ORD-2024-001,john.doe@email.com,John Doe,Laptop Pro 15 inch,1,1299.99,1299.99,delivered,2024-01-15T10:30:00
+ORD-2024-002,jane.smith@email.com,Jane Smith,Wireless Mouse,2,29.99,59.98,delivered,2024-01-16T14:22:00
+ORD-2024-003,bob.wilson@email.com,Bob Wilson,USB-C Cable 6ft,3,12.99,38.97,shipped,2024-01-17T09:15:00
+ORD-2024-004,alice.brown@email.com,Alice Brown,Mechanical Keyboard,1,149.99,149.99,processing,2024-01-18T11:45:00
+ORD-2024-005,charlie.davis@email.com,Charlie Davis,External SSD 1TB,1,89.99,89.99,delivered,2024-01-19T16:30:00
+ORD-2024-006,john.doe@email.com,John Doe,Laptop Stand,1,39.99,39.99,delivered,2024-01-20T08:20:00
+ORD-2024-007,emma.johnson@email.com,Emma Johnson,Webcam HD,1,79.99,79.99,shipped,2024-01-21T13:10:00
+ORD-2024-008,david.lee@email.com,David Lee,Monitor 27 inch 4K,1,449.99,449.99,processing,2024-01-22T10:05:00
+ORD-2024-009,sophia.martinez@email.com,Sophia Martinez,Ergonomic Chair,1,299.99,299.99,pending,2024-01-23T15:40:00
+ORD-2024-010,michael.taylor@email.com,Michael Taylor,Desk Lamp LED,2,34.99,69.98,delivered,2024-01-24T09:30:00
+ORD-2024-011,jane.smith@email.com,Jane Smith,Laptop Backpack,1,59.99,59.99,shipped,2024-01-25T11:15:00
+ORD-2024-012,olivia.anderson@email.com,Olivia Anderson,Portable Charger 20000mAh,1,45.99,45.99,delivered,2024-01-26T14:50:00
+ORD-2024-013,william.thomas@email.com,William Thomas,Noise Cancelling Headphones,1,199.99,199.99,processing,2024-01-27T10:25:00
+ORD-2024-014,ava.jackson@email.com,Ava Jackson,Phone Stand Adjustable,3,15.99,47.97,delivered,2024-01-28T16:10:00
+ORD-2024-015,james.white@email.com,James White,Graphics Tablet,1,179.99,179.99,shipped,2024-01-29T12:35:00
+ORD-2024-016,isabella.harris@email.com,Isabella Harris,Smart Watch,1,249.99,249.99,delivered,2024-01-30T09:45:00
+ORD-2024-017,john.doe@email.com,John Doe,Wireless Earbuds,1,89.99,89.99,cancelled,2024-01-31T13:20:00
+ORD-2024-018,ethan.martin@email.com,Ethan Martin,Bluetooth Speaker,2,54.99,109.98,processing,2024-02-01T11:05:00
+ORD-2024-019,mia.thompson@email.com,Mia Thompson,Laptop Sleeve 15 inch,1,24.99,24.99,delivered,2024-02-02T15:30:00
+ORD-2024-020,alexander.garcia@email.com,Alexander Garcia,USB Hub 7 Ports,1,32.99,32.99,shipped,2024-02-03T10:15:00
+ORD-2024-021,charlotte.rodriguez@email.com,Charlotte Rodriguez,Desk Organizer,1,28.99,28.99,delivered,2024-02-04T14:40:00
+ORD-2024-022,daniel.martinez@email.com,Daniel Martinez,External Hard Drive 2TB,1,69.99,69.99,processing,2024-02-05T09:55:00
+ORD-2024-023,amelia.hernandez@email.com,Amelia Hernandez,Tablet 10 inch,1,329.99,329.99,pending,2024-02-06T12:20:00
+ORD-2024-024,matthew.lopez@email.com,Matthew Lopez,Wireless Keyboard,1,49.99,49.99,delivered,2024-02-07T16:45:00
+ORD-2024-025,jane.smith@email.com,Jane Smith,Monitor Arm Mount,1,79.99,79.99,shipped,2024-02-08T11:30:00
