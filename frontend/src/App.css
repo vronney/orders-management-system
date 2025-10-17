@@ -40,7 +40,8 @@ body {
   gap: 0.75rem;
 }
 
-.nav-links button {
+.nav-links button,
+.nav-link {
   background: none;
   border: none;
   color: white;
@@ -50,13 +51,17 @@ body {
   border-radius: 6px;
   transition: all 0.2s;
   font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.nav-links button:hover {
+.nav-links button:hover,
+.nav-link:hover {
   background-color: rgba(255,255,255,0.1);
 }
 
-.nav-links button.active {
+.nav-links button.active,
+.nav-link.active {
   background-color: #3498db;
   box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
 }

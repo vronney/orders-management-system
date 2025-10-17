@@ -245,24 +245,34 @@
   font-size: 1.1rem;
 }
 
+.order-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.order-link:hover {
+  text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .stats-bar {
     flex-direction: column;
   }
-  
+
   .filters-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .table-container {
     overflow-x: scroll;
   }
-  
+
   .orders-table {
     font-size: 0.85rem;
   }
-  
+
   .orders-table th,
   .orders-table td {
     padding: 0.5rem;

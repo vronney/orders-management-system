@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, Navigate, Link } from 'react-router-dom';
 import Login from './components/Login';
 import Upload from './components/Upload';
 import Orders from './components/Orders';
+import OrderDetail from './components/OrderDetail';
 import Toast from './components/Toast';
 import api from './services/api';
 import { useToast } from './hooks/useToast';
 import './App.css';
 
-type View = 'orders' | 'upload';
-
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
-  const [currentView, setCurrentView] = useState<View>('orders');
   const [userRole, setUserRole] = useState<string | null>(null);
   const [sessionExpired, setSessionExpired] = useState<boolean>(false);
   
@@ -38,7 +37,6 @@ const App: React.FC = () => {
   const handleLogin = (role: string): void => {
     setIsAuthenticated(true);
     setUserRole(role);
-    setCurrentView('orders');
     setSessionExpired(false);
     showSuccess(`Welcome back! Logged in as ${role}`);
   };
@@ -47,7 +45,6 @@ const App: React.FC = () => {
     api.clearAuth();
     setIsAuthenticated(false);
     setUserRole(null);
-    setCurrentView('orders');
     showSuccess('Logged out successfully');
   };
 
@@ -78,22 +75,16 @@ const App: React.FC = () => {
         <div className="nav-brand">
           <h1>🛒 Orders Management System</h1>
         </div>
-        
+
         <div className="nav-links">
-          <button
-            className={currentView === 'orders' ? 'active' : ''}
-            onClick={() => setCurrentView('orders')}
-          >
+          <Link to="/" className="nav-link">
             📊 View Orders
-          </button>
-          
+          </Link>
+
           {isAdmin && (
-            <button
-              className={currentView === 'upload' ? 'active' : ''}
-              onClick={() => setCurrentView('upload')}
-            >
+            <Link to="/upload" className="nav-link">
               📤 Upload CSV
-            </button>
+            </Link>
           )}
         </div>
 
@@ -109,8 +100,11 @@ const App: React.FC = () => {
 
       {/* Main Content */}
       <main className="main-content">
-        {currentView === 'orders' && <Orders />}
-        {currentView === 'upload' && isAdmin && <Upload />}
+        <Routes>
+          <Route path="/" element={<Orders />} />
+          <Route path="/upload" element={isAdmin ? <Upload /> : <Navigate to="/" />} />
+          <Route path="/:orderId" element={<OrderDetail />} />
+        </Routes>
       </main>
 
       {/* Toast Notifications */}

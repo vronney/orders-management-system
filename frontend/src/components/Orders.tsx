@@ -1,4 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
+import { Link } from 'react-router-dom';
 import api from '../services/api';
 import { Order, OrderStats, OrderFilters } from '../types';
 import './Orders.css';
@@ -221,7 +222,11 @@ const Orders: React.FC<OrdersProps> = ({ onError }) => {
               <tbody>
                 {orders.map((order) => (
                   <tr key={order.id}>
-                    <td>{order.order_id}</td>
+                    <td>
+                      <Link to={`/${order.order_id}`} className="order-link">
+                        {order.order_id}
+                      </Link>
+                    </td>
                     <td>
                       <div className="customer-info">
                         <div>{order.customer_name}</div>
